@@ -1,0 +1,37 @@
+:root {
+	--default-font: Oswald, Merriweather, Arial;
+	
+	--arch-black: #000000;
+	--bulldog-red: #BA0C2F;
+	--chapel-bell-white: #ffffff;
+	--glory-glory: #E4002B;
+	--lake-herrick: #00A3AD;
+	--sanford: #554F47;
+	--creamery: #D6D2C4;
+	
+
+  	background-color: var(--background-color);
+	color: var(--content-color);
+	font-family: Trebuchet MS;
+}
+
+
+body {
+
+}
+
+.merriweather-<uniquifier> {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
