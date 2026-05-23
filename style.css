@@ -45,8 +45,49 @@ button:disabled {
 	pointer-events: none;      
 }
 
+a {
+	color: var(--bulldog-red);
+}
+
+.menubar-container {
+	height:5vh;
+	width:100vw;
+	
+	display:flex;
+	justify-content: right;
+	align-content: right;
+}
+
+.menubar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.menu-left-align {
+	display: flex;
+	justify-content: right;
+}
+
+.menubar-button {
+	transition: all 0.3s ease;
+	border-bottom: 0.1em solid var(--chapel-bell-white);
+	margin: 0.6em;
+	padding: 0.3em;
+	
+}
+
+.menubar-button:hover {
+	border-bottom: 0.1em solid var(--bulldog-red);
+}
+
 .landing {
-	height: 100vh;
+	height: 95vh;
 	width: 100%;
 	
 	background-color: var(--arch-black);
@@ -80,14 +121,16 @@ button:disabled {
 	position: relative;
     bottom: 0;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	width: 100%;
 	height: 15vh;
 	background-color: var(--arch-black);
-	color: var(--chapel-bell-white);
+	color: var(--stegman);
 	
-	text-align: center;
-	vertical-align: middle;
-	line-height: 15vh;
 }
 
 .merriweather-body {
