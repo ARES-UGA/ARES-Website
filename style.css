@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}   
+
 :root {
 	--default-font: Oswald, Merriweather, Arial;
 	
@@ -10,28 +14,67 @@
 	--creamery: #D6D2C4;
 	
 
-  	background-color: var(--background-color);
-	color: var(--content-color);
-	font-family: Trebuchet MS;
+  	background-color: var(--arch-black);
+	color: var(--chapel-bell-white);
 }
 
 
 body {
-
+	scrollbar-color: var(--bulldog-red) var(--arch-black);
+	scrollbar-width: thin;
 }
 
-.merriweather-<uniquifier> {
+.landing {
+	height: 75vh;
+	width: 100%;
+	
+	background-color: var(--arch-black);
+	color: var(--chapel-bell-white);
+	font-size: 17em;
+	
+	padding-left: 0.5em;
+	
+}
+
+.landing-accent {
+	color: var(--glory-glory);
+}
+
+.main-content {
+	width: 100%;
+
+	background-color: var(--chapel-bell-white);
+	color: var(--arch-black);
+	
+	padding: 1em;
+}
+
+.footer {
+	position: relative;
+    bottom: 0;
+
+	width: 100%;
+	height: 15vh;
+	background-color: var(--sanford);
+	color: var(--creamery);
+	
+	text-align: center;
+	vertical-align: middle;
+	line-height: 15vh;
+}
+
+.merriweather-body {
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
 }
 
-.oswald-<uniquifier> {
+.oswald-heading {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
