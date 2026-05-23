@@ -1,0 +1,159 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}   
+
+:root {
+	--default-font: Oswald, Merriweather, Arial;
+	
+	--arch-black: #000000;
+	--bulldog-red: #BA0C2F;
+	--chapel-bell-white: #ffffff;
+	--glory-glory: #E4002B;
+	--lake-herrick: #00A3AD;
+	--sanford: #554F47;
+	--creamery: #D6D2C4;
+	--stegman: #9EA2A2;
+	
+
+  	background-color: var(--arch-black);
+	color: var(--chapel-bell-white);
+}
+
+
+body {
+	scrollbar-color: var(--bulldog-red) var(--arch-black);
+	scrollbar-width: thin;
+}
+
+button {
+	background-color: var(--bulldog-red);
+	color: var(--chapel-bell-white);
+	padding: 0.6em;
+	border: 0.1em solid var(--stegman);
+	cursor: pointer;  
+	border-radius: 0.7em;
+}
+
+button:disabled {
+	background-color: var(--stegman);
+	color: var(--arch-black);
+	padding: 0.6em;
+	border: 0.1em solid var(--arch-black);
+	cursor: not-allowed;       
+	opacity: 0.6;              
+	border-radius: 0.7em;
+	pointer-events: none;      
+}
+
+a {
+	color: var(--bulldog-red);
+}
+
+.menubar-container {
+	height:5vh;
+	width:100vw;
+	
+	display:flex;
+	justify-content: right;
+	align-content: right;
+}
+
+.menubar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.menu-left-align {
+	display: flex;
+	justify-content: right;
+}
+
+.menubar-button {
+	transition: all 0.3s ease;
+	border-bottom: 0.1em solid var(--chapel-bell-white);
+	margin: 0.6em;
+	padding: 0.3em;
+	
+}
+
+.menubar-button:hover {
+	border-bottom: 0.1em solid var(--bulldog-red);
+}
+
+.landing {
+	height: 95vh;
+	width: 100%;
+	
+	background-color: var(--arch-black);
+	color: var(--chapel-bell-white);
+	font-size: 17em;
+	line-height: 1em;
+	
+	padding-left: 0.3em;
+	padding-top: 0.5em;
+}
+
+.landing-accent {
+	color: var(--glory-glory);
+}
+
+.main-content {
+	width: 100wv;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--chapel-bell-white);
+	color: var(--arch-black);
+	
+	padding: 5em;
+}
+
+.footer {
+	position: relative;
+    bottom: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 15vh;
+	background-color: var(--arch-black);
+	color: var(--stegman);
+	
+}
+
+.merriweather-body {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.merriweather-sans-body {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.oswald-heading {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
