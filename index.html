@@ -7,6 +7,9 @@
   <meta name="description" content="The official website for the University of Georgia's A.R.E.S. Research Lab.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
+  <!-- FAVICON LINK -->
+  <link rel="icon" type="image/jpeg" href="assets/ARES Lab Logo.png">
+  
   <link rel="stylesheet" href="style.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +26,9 @@
   <!-- Header / Navigation -->
   <header class="menubar-container">
     <nav class="menubar">
+      <!-- TOP BAR LOGO INTEGRATION -->
       <div class="brand-logo oswald-heading">
+        <img src="assets/ARES Lab Logo.png" alt="ARES Lab Logo" class="nav-logo">
         <span class="cyber-bracket">[</span>A.R.E.S.<span class="cyber-bracket">]</span>
       </div>
       <div class="menu-right-align oswald-heading">
@@ -77,11 +82,46 @@
       </ul>
     </section>
 
-    <!-- Members Section -->
+   <!-- Members Section -->
     <section class="content-card" id="members">
       <div class="card-header font-mono">// 03. TEAM_MEMBERS</div>
-      <h2 class="merriweather-body">Lab Roster</h2>
-      <p class="font-mono text-muted">&gt; Roster updates for the upcoming cycle are currently processing...</p>
+      <h2 class="merriweather-body">Lab Leadership & Officers</h2>
+      
+      <div class="officers-grid">
+        <!-- Officer 1: Agni Athreya-->
+        <a href="https://www.linkedin.com/in/agniathreya/" target="_blank" rel="noopener noreferrer" class="officer-link">
+          <div class="officer-card">
+            <div class="officer-img-container">
+              <img src="assets/Agni_headshot.webp" alt="Agni Athreya" class="officer-img">
+              <div class="img-overlay"></div>
+            </div>
+            <div class="officer-info">
+              <div class="officer-name-bar oswald-heading">
+                AGNI ATHREYA
+                <span class="external-icon">↗</span>
+              </div>
+              <div class="officer-position-bar font-mono">LAB DIRECTOR // CO-FOUNDER</div>
+            </div>
+          </div>
+        </a>
+        
+        <!-- Officer 2: Garrett Moore -->
+        <a href="https://garrettmoore.work/" target="_blank" rel="noopener noreferrer" class="officer-link">
+          <div class="officer-card">
+            <div class="officer-img-container">
+              <img src="assets/Garrett_headshot.webp" alt="Garrett Moore" class="officer-img">
+              <div class="img-overlay"></div>
+            </div>
+            <div class="officer-info">
+              <div class="officer-name-bar oswald-heading">
+                GARRETT MOORE
+                <span class="external-icon">↗</span>
+              </div>
+              <div class="officer-position-bar font-mono">LEAD EMBEDDED RESEARCHER // CO-FOUNDER</div>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
   </main>
 
