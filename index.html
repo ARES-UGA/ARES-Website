@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>UGA ARES Lab</title>
-    <meta charset="UTF-8">
-	<meta name="author" content="Garrett Moore">
-	<meta name="description" content="The main website for UGA's A.R.E.S Research Lab">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<link rel="stylesheet" href="style.css">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@434&display=swap" rel="stylesheet">
+<head>
+  <title>UGA ARES Lab | Advanced Research in Exploitation & Security</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Garrett Moore">
+  <meta name="description" content="The official website for the University of Georgia's A.R.E.S. Research Lab.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-	<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-  </head>
-  <body>
-	<div class="menubar-container oswald-heading">
-		<div class="menubar">
-			<div class="menu-left-align">
-				<div class="menubar-button" id="about-btn"> About </div>
-				<div class="menubar-button" id="members-btn"> Members </div>
-				<div class="menubar-button" id="research-btn"> Research </div>
-				<div class="menubar-button" id="contact-btn"> Contact </div>
-			</div>
-		</div>
-	</div>
-	<div class="landing oswald-heading">
-		<p class="landing-accent" style="margin: 0em;">ARES</p>
-		<p style="margin: 0em;">Lab</p>
-	</div>
-	<div class="main-content merriweather-sans-body" id="about">
-		<h1 class="merriweather-body">Advanced Research in Exploitation & Security (A.R.E.S.) Lab</h1>
-		<p>Making history as the University of Georgia's first undergraduate research lab, our mission is to tackle cutting-edge exploit detection and pioneer next-generation cybersecurity training.</p>
-		<p>If you are interested in joining our team, please complete the application below.</p>
-		<p>Next Application Cycle: TBD</p>
-		<button class="merriweather-sans-body" type="button" disabled>Application</button>
-	</div>
-	<div class="footer merriweather-sans-body" id="contact">
-		<a href="mailto:ares-lab-support@protonmail.com">ares-lab-support@protonmail.com</a>
-		<p>- Currently pending official UGA endosement -</p>
-	</div>
-  </body>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+</head>
+<body>
+  <!-- Cyber Overlay Elements -->
+  <div class="bg-grid"></div>
+  <div class="scanline"></div>
+
+  <!-- Header / Navigation -->
+  <header class="menubar-container">
+    <nav class="menubar">
+      <div class="brand-logo oswald-heading">
+        <span class="cyber-bracket">[</span>A.R.E.S.<span class="cyber-bracket">]</span>
+      </div>
+      <div class="menu-right-align oswald-heading">
+        <a class="menubar-button" href="#about">About</a>
+        <a class="menubar-button" href="#research">Research</a>
+        <a class="menubar-button" href="#members">Members</a>
+        <a class="menubar-button" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero / Landing Section -->
+  <section class="landing oswald-heading">
+    <div class="hero-content">
+      <div class="sys-status font-mono">
+        <span class="status-indicator"></span> SYS_READY // UGA_CYBER_LAB
+      </div>
+      <h1 class="landing-title">
+        <span class="landing-accent">ARES</span>
+        <span class="landing-sub">LAB</span>
+      </h1>
+      <p class="hero-tagline font-mono">&gt; Advanced Research in Exploitation &amp; Security</p>
+    </div>
+  </section>
+
+  <!-- Main Content Sections -->
+  <main class="main-content merriweather-sans-body">
+    <!-- About Section -->
+    <section class="content-card" id="about">
+      <div class="card-header font-mono">// 01. ABOUT_US</div>
+      <h2 class="merriweather-body">Pioneering Undergraduate Cybersecurity Research</h2>
+      <p>Making history as the University of Georgia's first undergraduate research lab, our mission is to tackle cutting-edge exploit detection and pioneer next-generation cybersecurity training.</p>
+      
+      <div class="app-box">
+        <div class="app-info">
+          <span class="font-mono label">CYCLE_STATUS:</span>
+          <span class="value">Next Application Cycle: TBD</span>
+        </div>
+        <button class="cyber-button font-mono" type="button" disabled>Applications Closed</button>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="content-card" id="research">
+      <div class="card-header font-mono">// 02. RESEARCH_AREAS</div>
+      <h2 class="merriweather-body">Focus & Domain Objectives</h2>
+      <ul class="research-list font-mono">
+        <li><span>01</span> Vulnerability Discovery & Automated Exploit Analysis</li>
+        <li><span>02</span> Binary Analysis, Reverse Engineering & Hardware Security</li>
+        <li><span>03</span> Cyber-Defense Training Infrastructure & CTF Frameworks</li>
+      </ul>
+    </section>
+
+    <!-- Members Section -->
+    <section class="content-card" id="members">
+      <div class="card-header font-mono">// 03. TEAM_MEMBERS</div>
+      <h2 class="merriweather-body">Lab Roster</h2>
+      <p class="font-mono text-muted">&gt; Roster updates for the upcoming cycle are currently processing...</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer merriweather-sans-body" id="contact">
+    <div class="footer-content font-mono">
+      <p class="contact-email">
+        <span class="label">CONTACT //</span> 
+        <a href="mailto:ares-lab-support@protonmail.com">ares-lab-support@protonmail.com</a>
+      </p>
+      <p class="disclaimer">- Currently pending official UGA endorsement -</p>
+    </div>
+  </footer>
+
   <script src="./script.js"></script>
+</body>
 </html>
